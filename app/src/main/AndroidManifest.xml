@@ -34,7 +34,8 @@
         <activity android:name=".Client.CLuploadproject" />
         <activity android:name=".HR.HRjobpost" />
         <activity android:name=".HR.HRleave" />
-        <activity android:name=".HR.HRviewjobPost"></activity>
+        <activity android:name=".HR.HRviewjobPost" />
+        <activity android:name=".PM.PMLeave"></activity>
     </application>
 
 </manifest>
