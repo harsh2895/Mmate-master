@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="com.example.admin.manimate.Client.CLuploadproject">
+
+    <EditText
+        android:id="@+id/ClProjectTitle"
+        android:hint="Project Title"
+        android:gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp" />
+    <EditText
+        android:id="@+id/ClprojectDec"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClProjectTitle"
+        android:layout_alignLeft="@+id/ClProjectTitle"
+        android:layout_alignStart="@+id/ClProjectTitle"
+        android:layout_marginTop="44dp"
+        android:hint="Project Decprition"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/CLprojectDure"
+        android:layout_width="330dp"
+        android:hint="Project Duretion"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ClprojectDec"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+    <Button
+        android:id="@+id/BtUploadpro"
+        android:layout_width="150dp"
+        android:text="Upload"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/CLprojectDure"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

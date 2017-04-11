@@ -26,10 +26,15 @@
             android:name=".Home"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".Client" />
-        <activity android:name=".DL" />
-        <activity android:name=".HR" />
-        <activity android:name=".PM"></activity>
+        <activity android:name=".Client.Client" />
+        <activity android:name=".DL.DL" />
+        <activity android:name=".HR.HR" />
+        <activity android:name=".PM.PM" />
+        <activity android:name=".Client.CLpostbag" />
+        <activity android:name=".Client.CLuploadproject" />
+        <activity android:name=".HR.HRjobpost" />
+        <activity android:name=".HR.HRleave" />
+        <activity android:name=".HR.HRviewjobPost"></activity>
     </application>
 
 </manifest>

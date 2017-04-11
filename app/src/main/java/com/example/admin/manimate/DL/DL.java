@@ -1,4 +1,4 @@
-package com.example.admin.manimate;
+package com.example.admin.manimate.DL;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,25 +6,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class HR extends AppCompatActivity {
+import com.example.admin.manimate.R;
+
+public class DL extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hr);
-        final Button button=(Button)findViewById(R.id.HRtimeshee) ;
-        final Button button1=(Button)findViewById(R.id.HRsharejobpost) ;
-        final Button button2=(Button)findViewById(R.id.HRViewjobpost) ;
-        final Button button3=(Button)findViewById(R.id.HRviewleave) ;
-        final Button button4=(Button)findViewById(R.id.HRpayrole) ;
-        final Button button5=(Button)findViewById(R.id.HRfaq) ;
+        setContentView(R.layout.activity_dl);
+
+        final Button button=(Button)findViewById(R.id.Dlviewtask) ;
+        final Button button1=(Button)findViewById(R.id.Dlrepprojectstatus) ;
+        final Button button2=(Button)findViewById(R.id.DLviewbag) ;
+        final Button button3=(Button)findViewById(R.id.DLviewleave) ;
+        final Button button4=(Button)findViewById(R.id.DLfaq) ;
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String strbtn=button.getText().toString();
                 if (strbtn.isEmpty()){
-                    Toast.makeText(HR.this, "Please wait for Time sheet", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DL.this, "Please wait for Time sheet", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -34,7 +37,8 @@ public class HR extends AppCompatActivity {
             public void onClick(View v) {
                 String strbtn1=button1.getText().toString();
                 if (strbtn1.isEmpty()){
-                    Toast.makeText(HR.this, "Please wait for viewjobpost", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DL.this, "Please wait for viewjobpost", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DL.this, "Please wait for viewjobpost", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -43,7 +47,7 @@ public class HR extends AppCompatActivity {
             public void onClick(View v) {
                 String strbtn2=button2.getText().toString();
                 if(strbtn2.isEmpty()){
-                    Toast.makeText(HR.this, "Please wait for sharejobpost", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DL.this, "Please wait for sharejobpost", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -53,7 +57,7 @@ public class HR extends AppCompatActivity {
             public void onClick(View v) {
                 String strbtn3=button3.getText().toString();
                 if (strbtn3.isEmpty()){
-                    Toast.makeText(HR.this, "Please Wait for View Leave", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DL.this, "Please Wait for View Leave", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -62,18 +66,10 @@ public class HR extends AppCompatActivity {
             public void onClick(View v) {
                 String strbtn4=button4.getText().toString();
                 if (strbtn4.isEmpty()){
-                    Toast.makeText(HR.this, "Please Wait for view payroll", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DL.this, "Please Wait for view payroll", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String strbtn4=button5.getText().toString();
-                if (strbtn4.isEmpty()){
-                    Toast.makeText(HR.this, "Please Wait for HR for FAQ", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+
     }
 }
