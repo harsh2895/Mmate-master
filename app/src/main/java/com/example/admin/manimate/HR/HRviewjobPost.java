@@ -13,6 +13,9 @@ public class HRviewjobPost extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hrviewjob_post);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         TextView jobtitle=(TextView)findViewById(R.id.hrpostjobtital);
         TextView jobdesc=(TextView)findViewById(R.id.hrpostjobdec);
         TextView jobaval=(TextView)findViewById(R.id.hrpostjobavlable);

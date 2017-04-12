@@ -18,6 +18,9 @@ public class CLuploadproject extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cluploadproject);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final EditText ed1 = (EditText) findViewById(ClProjectTitle);
         final EditText ed2 = (EditText) findViewById(R.id.ClprojectDec);
         final EditText ed3 = (EditText) findViewById(R.id.CLprojectDure);

@@ -1,11 +1,13 @@
 package com.example.admin.manimate.PM;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.admin.manimate.Home;
 import com.example.admin.manimate.R;
 
 public class PM extends AppCompatActivity {
@@ -14,6 +16,10 @@ public class PM extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pm);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final Button button=(Button)findViewById(R.id.PMviewproject) ;
         final Button button1=(Button)findViewById(R.id.PMpostproject) ;
         final Button button2=(Button)findViewById(R.id.PMclcommunication) ;
@@ -63,6 +69,8 @@ public class PM extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strbtn4=button4.getText().toString();
+                Intent intent=new Intent(PM.this,PMLeave.class);
+                startActivity(intent);
                 if (strbtn4.isEmpty()){
                     Toast.makeText(PM.this, "Please Wait for view payroll", Toast.LENGTH_SHORT).show();
                 }

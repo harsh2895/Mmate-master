@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/main"
     android:weightSum="3"
     tools:context="com.example.admin.manimate.MainActivity"
@@ -20,17 +20,19 @@
         android:layout_width="124dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
         />
 
 
     <AutoCompleteTextView
         android:id="@+id/user_name"
-        android:layout_width="230dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="35dp"
         android:drawableLeft="@drawable/login_img"
         android:padding="10dp"
+        android:maxLines="1"
         android:password="false"
         android:textColor="#fdfdfd"
         android:textColorHighlight="#fdfdfd"
@@ -38,21 +40,19 @@
         android:textIsSelectable="false" />
 
 
-
     <AutoCompleteTextView
 
         android:id="@+id/forgot"
-        android:layout_width="230dp"
-        android:layout_marginLeft="70dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:textColor="#fdfdfd"
-        android:inputType="textPassword"
-        android:textColorHighlight = "#fdfdfd"
-        android:textColorHint = "#fdfdfd"
-        android:padding="10dp"
+        android:layout_marginLeft="60dp"
         android:layout_marginTop="5dp"
         android:drawableLeft="@drawable/pass_img"
-        />
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#fdfdfd"
+        android:textColorHighlight="#fdfdfd"
+        android:textColorHint="#fdfdfd" />
 
 
     <Button
@@ -65,6 +65,7 @@
         android:shape="rectangle"
         android:textStyle="bold"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         />
 
 

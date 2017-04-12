@@ -18,6 +18,9 @@ public class HRjobpost extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hrjobpost);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final EditText ed1=(EditText)findViewById(HRJobtital);
         final EditText ed2=(EditText)findViewById(R.id.HRjobdec);
         final EditText ed3=(EditText)findViewById(R.id.HRjobAveb);

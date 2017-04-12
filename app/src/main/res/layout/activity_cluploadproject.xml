@@ -10,7 +10,9 @@
     <EditText
         android:id="@+id/ClProjectTitle"
         android:hint="Project Title"
+        android:textColorHint="@color/colorAccent"
         android:gravity="center"
+        android:textColor="@color/colorAccent"
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -18,7 +20,9 @@
         android:layout_marginTop="87dp" />
     <EditText
         android:id="@+id/ClprojectDec"
+        android:textColorHint="@color/colorAccent"
         android:layout_width="330dp"
+        android:textColor="@color/colorAccent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ClProjectTitle"
         android:layout_alignLeft="@+id/ClProjectTitle"
@@ -31,7 +35,9 @@
         android:layout_width="330dp"
         android:hint="Project Duretion"
         android:gravity="center"
+        android:textColor="@color/colorAccent"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/colorAccent"
         android:layout_below="@+id/ClprojectDec"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp" />
@@ -42,6 +48,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:layout_below="@+id/CLprojectDure"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"/>
 
 </RelativeLayout>

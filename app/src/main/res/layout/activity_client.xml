@@ -54,9 +54,8 @@
         android:fontFamily="cursive"
         android:textStyle="bold"
         android:textSize="20dp"/>
-
     <Button
-        android:id="@+id/CLfaq"
+        android:id="@+id/CLuploadPRo"
         android:layout_width="150dp"
         android:layout_height="110dp"
         android:layout_alignLeft="@+id/CLprojectstatus"
@@ -64,9 +63,25 @@
         android:layout_alignTop="@+id/Clpostbag"
         android:background="#003152"
         android:textColor="#fffefe"
-        android:text="FAQ"
+        android:text="Upload project"
         android:fontFamily="cursive"
         android:textStyle="bold"
         android:textSize="20dp" />
-
+    <Button
+        android:id="@+id/Clfaq"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/Clpostbag"
+        android:layout_alignLeft="@+id/Clpostbag"
+        android:layout_alignStart="@+id/Clpostbag"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp"
+        android:background="#003152"
+        android:textColor="#fffefe"
+        android:text="FAQ"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
 </RelativeLayout>

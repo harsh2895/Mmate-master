@@ -1,5 +1,6 @@
 package com.example.admin.manimate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.example.admin.manimate.Client.Client;
+import com.example.admin.manimate.DL.DL;
+import com.example.admin.manimate.HR.HR;
+import com.example.admin.manimate.PM.PM;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -20,17 +28,64 @@ public class Home extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        final Button button=(Button)findViewById(R.id.btClient) ;
+        final Button button1=(Button)findViewById(R.id.btDevlopar) ;
+        final Button button2=(Button)findViewById(R.id.btProjectmanager) ;
+        final Button button3=(Button)findViewById(R.id.btHr);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String strbtn=button.getText().toString();
+                Intent intent=new Intent(Home.this,Client.class);
+                startActivity(intent);
+                if (strbtn.isEmpty()){
+                    Toast.makeText(Home.this, "Please wait for View Client Data", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String strbtn1=button1.getText().toString();
+                Intent intent=new Intent(Home.this,DL.class);
+                startActivity(intent);
+                if (strbtn1.isEmpty()){
+                    Toast.makeText(Home.this, "Please wait for view Devlopar data", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String strbtn2=button2.getText().toString();
+                Intent intent=new Intent(Home.this,PM.class);
+                startActivity(intent);
+                if(strbtn2.isEmpty()){
+                    Toast.makeText(Home.this, "Please wait for view Project Manager data", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String strbtn3=button3.getText().toString();
+                Intent intent=new Intent(Home.this,HR.class);
+                startActivity(intent);
+                if (strbtn3.isEmpty()){
+                    Toast.makeText(Home.this, "Please Wait for View HR data", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

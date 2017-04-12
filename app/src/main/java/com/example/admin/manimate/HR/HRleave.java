@@ -18,6 +18,10 @@ public class HRleave extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hrleave);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final EditText ed1=(EditText)findViewById(HRleaveSub);
         final EditText ed2=(EditText)findViewById(R.id.HRleaveDate);
         final EditText ed3=(EditText)findViewById(R.id.HrleaveDec);

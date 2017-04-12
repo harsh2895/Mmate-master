@@ -9,6 +9,7 @@
 
     <TextView
         android:text="Subject"
+        android:textColor="@color/colorAccent"
         android:textSize="20dp"
         android:layout_width="250dp"
         android:layout_height="20dp"
@@ -22,6 +23,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:textColor="@color/colorAccent"
         android:layout_below="@+id/tvSubject"
         android:layout_alignLeft="@+id/tvSubject"
         android:layout_alignStart="@+id/tvSubject"
@@ -29,6 +31,7 @@
         android:id="@+id/HRleaveSub" />
     <TextView
         android:text="Date"
+        android:textColor="@color/colorAccent"
         android:textSize="20dp"
         android:layout_width="250dp"
         android:layout_height="20dp"
@@ -41,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/ETdate"
+        android:textColor="@color/colorAccent"
         android:layout_alignLeft="@+id/ETdate"
         android:layout_alignStart="@+id/ETdate"
         android:layout_marginTop="17dp"
@@ -50,6 +54,7 @@
         android:layout_width="250dp"
         android:layout_height="20dp"
         android:text="Descprition"
+        android:textColor="@color/colorAccent"
         android:layout_below="@+id/HRleaveDate"
         android:layout_alignLeft="@+id/HRleaveDate"
         android:layout_alignStart="@+id/HRleaveDate"
@@ -61,6 +66,7 @@
         android:layout_below="@+id/ETdescprition"
         android:layout_alignLeft="@+id/ETdescprition"
         android:layout_alignStart="@+id/ETdescprition"
+        android:textColor="@color/colorAccent"
         android:layout_marginTop="11dp"
         android:id="@+id/HrleaveDec" />
     <Button
@@ -70,6 +76,9 @@
         android:layout_marginTop="41dp"
         android:layout_below="@+id/HrleaveDec"
         android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"
         android:text="Submit"/>
 
 

@@ -17,6 +17,10 @@ public class PMLeave extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pmleave);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final EditText ed1=(EditText)findViewById(PmLeavesubj);
         final EditText ed2=(EditText)findViewById(R.id.PmLeavedat);
         final EditText ed3=(EditText)findViewById(R.id.PmLeaveDec);

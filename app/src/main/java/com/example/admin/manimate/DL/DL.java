@@ -15,6 +15,9 @@ public class DL extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dl);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final Button button=(Button)findViewById(R.id.Dlviewtask) ;
         final Button button1=(Button)findViewById(R.id.Dlrepprojectstatus) ;
         final Button button2=(Button)findViewById(R.id.DLviewbag) ;

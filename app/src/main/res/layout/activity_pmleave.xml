@@ -17,37 +17,44 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="26dp"
         android:layout_marginStart="26dp"
-        android:id="@+id/PmLeaavesub" />
+        android:id="@+id/PmLeaavesub"
+        android:textColor="@color/colorAccent"/>
     <EditText
         android:id="@+id/PmLeavesubj"
+        android:textColor="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/PmLeaavesub"
         android:layout_alignLeft="@+id/PmLeaavesub"
         android:layout_alignStart="@+id/PmLeaavesub"
+
         android:layout_marginTop="14dp" />
     <TextView
         android:layout_width="250dp"
         android:layout_height="20dp"
         android:text="Date"
+        android:textColor="@color/colorAccent"
         android:textSize="20dp"
         android:layout_below="@+id/PmLeavesubj"
         android:layout_alignLeft="@+id/PmLeavesubj"
         android:layout_alignStart="@+id/PmLeavesubj"
         android:layout_marginTop="14dp"
-        android:id="@+id/textView2" />
+        android:id="@+id/textView2"
+        />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/PmLeavedat"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/textView2"
+        android:textColor="@color/colorAccent"
         android:layout_alignStart="@+id/textView2"
         android:layout_marginTop="17dp" />
     <TextView
         android:layout_width="250dp"
         android:layout_height="20dp"
         android:textSize="20dp"
+        android:textColor="@color/colorAccent"
         android:text="Description"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/PmLeavedat"
@@ -59,6 +66,7 @@
         android:id="@+id/PmLeaveDec"
         android:layout_below="@+id/textView3"
         android:layout_alignLeft="@+id/textView3"
+        android:textColor="@color/colorAccent"
         android:layout_alignStart="@+id/textView3"
         android:layout_marginTop="16dp" />
 
@@ -69,5 +77,8 @@
         android:layout_below="@+id/PmLeaveDec"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp"
-        android:text="Submit"/>
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"/>
 </RelativeLayout>

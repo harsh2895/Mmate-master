@@ -12,9 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/colorAccent"
         android:gravity="center"
         android:inputType="textPersonName"
         android:hint="Job Title"
+        android:textColorHint="#ffffff"
         android:layout_marginBottom="92dp"
         android:layout_above="@+id/HRjobdec"
         android:layout_alignLeft="@+id/HRjobdec"
@@ -27,6 +29,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Job Description"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#ffffff"
         android:gravity="center"
         android:layout_above="@+id/BTHRjobpost"
         android:layout_centerHorizontal="true"
@@ -37,8 +41,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/colorAccent"
         android:inputType="textPersonName"
         android:hint="Availability"
+        android:textColorHint="#ffffff"
         android:gravity="center"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/HRJobtital"
@@ -54,6 +60,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/HRjobAveb"
         android:layout_alignEnd="@+id/HRjobAveb"
-        android:layout_marginBottom="105dp" />
+        android:layout_marginBottom="105dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#19334e"/>
 
 </RelativeLayout>

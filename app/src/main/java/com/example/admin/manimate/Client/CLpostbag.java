@@ -18,6 +18,9 @@ public class CLpostbag extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clpostbag);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final EditText ed1 = (EditText) findViewById(Clprojectname);
         final EditText ed2 = (EditText) findViewById(R.id.ClBagtitle);
         final EditText ed3 = (EditText) findViewById(R.id.ClBagdec);

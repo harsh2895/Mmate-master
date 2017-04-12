@@ -1,11 +1,14 @@
 package com.example.admin.manimate.HR;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.admin.manimate.Home;
+import com.example.admin.manimate.PM.PM;
 import com.example.admin.manimate.R;
 
 public class HR extends AppCompatActivity {
@@ -14,6 +17,10 @@ public class HR extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hr);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowCustomEnabled(true);
+
         final Button button=(Button)findViewById(R.id.HRtimeshee) ;
         final Button button1=(Button)findViewById(R.id.HRsharejobpost) ;
         final Button button2=(Button)findViewById(R.id.HRViewjobpost) ;
@@ -35,6 +42,8 @@ public class HR extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strbtn1=button1.getText().toString();
+                Intent intent=new Intent(HR.this,HRjobpost.class);
+                startActivity(intent);
                 if (strbtn1.isEmpty()){
                     Toast.makeText(HR.this, "Please wait for viewjobpost", Toast.LENGTH_SHORT).show();
                 }
@@ -44,6 +53,8 @@ public class HR extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strbtn2=button2.getText().toString();
+                Intent intent=new Intent(HR.this,HRviewjobPost.class);
+                startActivity(intent);
                 if(strbtn2.isEmpty()){
                     Toast.makeText(HR.this, "Please wait for sharejobpost", Toast.LENGTH_SHORT).show();
                 }
@@ -54,6 +65,8 @@ public class HR extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strbtn3=button3.getText().toString();
+                Intent intent=new Intent(HR.this,HRleave.class);
+                startActivity(intent);
                 if (strbtn3.isEmpty()){
                     Toast.makeText(HR.this, "Please Wait for View Leave", Toast.LENGTH_SHORT).show();
                 }
