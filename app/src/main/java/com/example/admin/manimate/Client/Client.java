@@ -3,6 +3,7 @@ package com.example.admin.manimate.Client;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -13,12 +14,24 @@ import com.example.admin.manimate.R;
 public class Client extends AppCompatActivity {
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        if(id==android.R.id.home)
+        {
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
+
 
 
         final Button button=(Button)findViewById(R.id.CLtimesheet) ;
@@ -32,6 +45,8 @@ public class Client extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strbtn=button.getText().toString();
+                Intent intent=new Intent(Client.this,CLtimesheet.class);
+                startActivity(intent);
                 if (strbtn.isEmpty()){
                     Toast.makeText(Client.this, "Please wait for Time sheet", Toast.LENGTH_SHORT).show();
                 }
@@ -42,6 +57,8 @@ public class Client extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strbtn1=button1.getText().toString();
+                Intent intent=new Intent(Client.this,CLprojectstatus.class);
+                startActivity(intent);
                 if (strbtn1.isEmpty()){
                     Toast.makeText(Client.this, "Please wait for viewjobpost", Toast.LENGTH_SHORT).show();
                 }
@@ -74,11 +91,15 @@ public class Client extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String strbtn4=button4.getText().toString();
+                Intent intent=new Intent(Client.this,CLfaq.class);
+                startActivity(intent);
                 if (strbtn4.isEmpty()){
                     Toast.makeText(Client.this, "Please Wait for View Project Upload", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
+
 
 
     }

@@ -23,6 +23,8 @@
         android:layout_marginLeft="36dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="104dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:id="@+id/btClient" />
     <Button
         android:layout_width="150dp"
@@ -49,6 +51,7 @@
         android:layout_alignLeft="@+id/btClient"
         android:layout_alignStart="@+id/btClient"
         android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="23dp"
         android:id="@+id/btProjectmanager" />

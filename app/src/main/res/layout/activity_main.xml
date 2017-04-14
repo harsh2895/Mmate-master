@@ -24,11 +24,12 @@
         />
 
 
-    <AutoCompleteTextView
+    <EditText
         android:id="@+id/user_name"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
+        android:singleLine="true"
         android:layout_marginTop="35dp"
         android:drawableLeft="@drawable/login_img"
         android:padding="10dp"
@@ -40,10 +41,11 @@
         android:textIsSelectable="false" />
 
 
-    <AutoCompleteTextView
+    <EditText
 
         android:id="@+id/forgot"
         android:layout_width="260dp"
+        android:singleLine="true"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="5dp"

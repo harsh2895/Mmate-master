@@ -35,7 +35,7 @@
         android:layout_marginTop="30dp"
         android:background="#003152"
         android:textColor="#fffefe"
-        android:text="View Bag"
+        android:text="View Bug"
         android:fontFamily="cursive"
         android:textStyle="bold"
         android:textSize="20dp"
@@ -65,7 +65,7 @@
         android:layout_alignTop="@+id/Dlrepprojectstatus"
         android:background="#003152"
         android:textColor="#fffefe"
-        android:text="View Leave"
+        android:text=" Leave"
         android:fontFamily="cursive"
         android:textStyle="bold"
         android:textSize="20dp" />

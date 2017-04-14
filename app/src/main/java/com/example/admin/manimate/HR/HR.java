@@ -3,6 +3,7 @@ package com.example.admin.manimate.HR;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -12,6 +13,15 @@ import com.example.admin.manimate.PM.PM;
 import com.example.admin.manimate.R;
 
 public class HR extends AppCompatActivity {
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        if(id==android.R.id.home) {
+           onBackPressed();
+        }
+            return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,5 +100,7 @@ public class HR extends AppCompatActivity {
                 }
             }
         });
+
+
     }
 }

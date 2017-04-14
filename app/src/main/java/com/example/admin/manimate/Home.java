@@ -2,8 +2,10 @@ package com.example.admin.manimate;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.TaskStackBuilder;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -23,6 +25,7 @@ import com.example.admin.manimate.PM.PM;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +83,8 @@ public class Home extends AppCompatActivity
                 }
             }
         });
+
+
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -143,9 +148,17 @@ public class Home extends AppCompatActivity
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.Log) {
+            getSharedPreferences("testperf",MODE_PRIVATE).edit().clear().apply();
+            Intent intent=new Intent(Home.this,MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            Toast.makeText(this,"Successfullly logout",Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.nav_send) {
+
+        } else if (id == R.id.Abo) {
+            Intent aboutus=new Intent(Home.this,About.class);
+            startActivity(aboutus);
 
         }
 

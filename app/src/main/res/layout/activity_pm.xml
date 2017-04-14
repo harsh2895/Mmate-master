@@ -57,7 +57,7 @@
         android:textSize="19dp"/>
 
     <Button
-        android:id="@+id/PMprojectcreat"
+        android:id="@+id/PMassigntask"
         android:layout_width="150dp"
         android:layout_height="110dp"
         android:layout_alignLeft="@+id/PMpostproject"
@@ -65,7 +65,7 @@
         android:layout_alignTop="@+id/PMclcommunication"
         android:background="#003152"
         android:textColor="#fffefe"
-        android:text="Project Create"
+        android:text="Assign task"
         android:fontFamily="cursive"
         android:textStyle="bold"
         android:textSize="20dp" />
@@ -95,8 +95,8 @@
         android:textStyle="bold"
         android:textSize="20dp"
         android:layout_alignBottom="@+id/PMleave"
-        android:layout_alignLeft="@+id/PMprojectcreat"
-        android:layout_alignStart="@+id/PMprojectcreat"
+        android:layout_alignLeft="@+id/PMassigntask"
+        android:layout_alignStart="@+id/PMassigntask"
         android:layout_alignTop="@+id/PMleave" />
 
 </RelativeLayout>

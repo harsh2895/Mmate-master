@@ -3,8 +3,7 @@
     <string-array name="dipartment">
         <item>Project Manager</item>
         <item>HR Manager</item>
-        <item>Development Leader</item>
-        <item>Team Leader</item>
+        <item>Developer</item>
         <item>Client</item>
     </string-array>
     <string name="title_activity_main2">Main2Activity</string>

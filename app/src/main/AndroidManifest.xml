@@ -12,41 +12,91 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".screen"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Registration" />
-        <activity android:name=".Forgotpassword" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Forgotpassword"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".Client.Client"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".DL.DL"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".HR.HR"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".PM.PM"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".Client.CLpostbag"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".Client.CLuploadproject"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".HR.HRjobpost"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".HR.HRleave"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".HR.HRviewjobPost"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".PM.PMLeave"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".About"></activity>
+        <activity
+            android:name=".Client.Client"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DL.DL"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HR.HR"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PM.PM"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Client.CLpostbag"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Client.CLuploadproject"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HR.HRjobpost"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HR.HRleave"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HR.HRviewjobPost"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PM.PMLeave"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Client.CLtimesheet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Client.CLprojectstatus"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Client.CLfaq"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DL.DLleave" />
+        <activity android:name=".DL.DLprojectstat" />
+        <activity android:name=".DL.DLViewbug" />
+        <activity android:name=".DL.DLViewtask" />
+        <activity android:name=".HR.HRPayrol" />
+        <activity android:name=".HR.HRTimesheet" />
+        <activity android:name=".PM.PMProjectstatus" />
+        <activity android:name=".PM.PMAssigntask"></activity>
     </application>
 
 </manifest>

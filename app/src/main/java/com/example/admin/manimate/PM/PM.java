@@ -3,14 +3,22 @@ package com.example.admin.manimate.PM;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.admin.manimate.Home;
 import com.example.admin.manimate.R;
 
 public class PM extends AppCompatActivity {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        if(id==android.R.id.home) {
+            onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +31,7 @@ public class PM extends AppCompatActivity {
         final Button button=(Button)findViewById(R.id.PMviewproject) ;
         final Button button1=(Button)findViewById(R.id.PMpostproject) ;
         final Button button2=(Button)findViewById(R.id.PMclcommunication) ;
-        final Button button3=(Button)findViewById(R.id.PMprojectcreat) ;
+        final Button button3=(Button)findViewById(R.id.PMassigntask) ;
         final Button button4=(Button)findViewById(R.id.PMleave) ;
         final Button button5=(Button)findViewById(R.id.PMfaq) ;
 
